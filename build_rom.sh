@@ -6,6 +6,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source build/envsetup.sh
 lunch cipher_Z01R-userdebug
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 export TZ=Asia/Kolkata 
 mka bacon
 
